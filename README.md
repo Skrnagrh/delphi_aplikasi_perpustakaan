@@ -18,7 +18,7 @@ Berikut adalah beberapa tampilan dari aplikasi CRUD Perpustakaan Delphi 7 :
 |:---:|:---:|
 | Halaman Data Buku | Halaman Data Peminjaman |
 
-| <img src="https://github.com/Skrnagrh/delphi_aplikasi_perpustakaan/raw/main/1.tampilan/5.png" alt="Tampilan 5" width="70%"> | 
+| <img src="https://github.com/Skrnagrh/delphi_aplikasi_perpustakaan/raw/main/1.Tampilan/5.png" alt="Tampilan 5" width="70%"> | 
 |:---:|
 | Cara Konfigurasi Database |
 
