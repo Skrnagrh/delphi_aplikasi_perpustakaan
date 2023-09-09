@@ -1,0 +1,13 @@
+program PBuku;
+
+uses
+  Forms,
+  UBuku in 'UBuku.pas' {FBuku};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFBuku, FBuku);
+  Application.Run;
+end.

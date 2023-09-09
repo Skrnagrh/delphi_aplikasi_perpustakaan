@@ -1,0 +1,425 @@
+object FPinjam: TFPinjam
+  Left = 69
+  Top = 22
+  Width = 1250
+  Height = 717
+  Caption = 'FPeminjaman'
+  Color = clTeal
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label4: TLabel
+    Left = 16
+    Top = 8
+    Width = 440
+    Height = 46
+    Caption = 'Data Peminjaman Buku'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -40
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 16
+    Top = 64
+    Width = 409
+    Height = 601
+    Caption = 'Peminjaman Buku '
+    Color = clTeal
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Top = 48
+      Width = 144
+      Height = 20
+      Caption = 'Kode Peminjaman'
+      Color = clTeal
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 8
+      Top = 344
+      Width = 88
+      Height = 20
+      Caption = 'Kode Buku'
+      Color = clTeal
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 8
+      Top = 408
+      Width = 160
+      Height = 20
+      Caption = 'Jumlah Peminjaman'
+      Color = clTeal
+      DragMode = dmAutomatic
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 8
+      Top = 272
+      Width = 36
+      Height = 20
+      Caption = 'Nim '
+      Color = clTeal
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 8
+      Top = 200
+      Width = 183
+      Height = 20
+      Caption = 'Tanggal Pengembalian'
+      Color = clTeal
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 8
+      Top = 120
+      Width = 167
+      Height = 20
+      Caption = 'Tanggal Peminjaman'
+      Color = clTeal
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Edit4: TEdit
+      Left = 8
+      Top = 368
+      Width = 297
+      Height = 28
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Edit5: TEdit
+      Left = 8
+      Top = 432
+      Width = 385
+      Height = 28
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Left = 8
+      Top = 488
+      Width = 113
+      Height = 50
+      Cursor = crHandPoint
+      Caption = 'Jumlah Pinjam'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+      OnClick = Button3Click
+    end
+    object Edit3: TEdit
+      Left = 8
+      Top = 72
+      Width = 385
+      Height = 28
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+    end
+    object Edit1: TEdit
+      Left = 8
+      Top = 296
+      Width = 297
+      Height = 28
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+    end
+    object Kembali: TButton
+      Left = 128
+      Top = 488
+      Width = 81
+      Height = 50
+      Cursor = crHandPoint
+      Caption = 'Ubah Data'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+      OnClick = KembaliClick
+    end
+    object Button7: TButton
+      Left = 312
+      Top = 368
+      Width = 81
+      Height = 33
+      Cursor = crHandPoint
+      Caption = 'Cari Buku'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 6
+      OnClick = Button7Click
+    end
+    object Button8: TButton
+      Left = 8
+      Top = 544
+      Width = 113
+      Height = 50
+      Caption = 'Clear'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 7
+      OnClick = Button8Click
+    end
+  end
+  object Button1: TButton
+    Left = 328
+    Top = 360
+    Width = 81
+    Height = 30
+    Cursor = crHandPoint
+    Caption = 'Cari NIM'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object DBGrid1: TDBGrid
+    Left = 432
+    Top = 120
+    Width = 785
+    Height = 545
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+  end
+  object Button5: TButton
+    Left = 328
+    Top = 552
+    Width = 81
+    Height = 50
+    Cursor = crHandPoint
+    Caption = 'Simpan'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 232
+    Top = 552
+    Width = 89
+    Height = 50
+    Cursor = crHandPoint
+    Caption = 'Hapus'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = Button6Click
+  end
+  object DateTimePicker1: TDateTimePicker
+    Left = 24
+    Top = 208
+    Width = 385
+    Height = 28
+    Date = 44931.455060543980000000
+    Time = 44931.455060543980000000
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+  end
+  object DateTimePicker2: TDateTimePicker
+    Left = 24
+    Top = 288
+    Width = 385
+    Height = 28
+    Date = 44931.455060543980000000
+    Time = 44931.455060543980000000
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Cari: TButton
+    Left = 952
+    Top = 72
+    Width = 130
+    Height = 41
+    Cursor = crHandPoint
+    Caption = 'Cari Data'
+    DragCursor = crHandPoint
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = Button4Click
+  end
+  object Edit6: TEdit
+    Left = 432
+    Top = 80
+    Width = 513
+    Height = 28
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Button2: TButton
+    Left = 1088
+    Top = 72
+    Width = 129
+    Height = 41
+    Cursor = crHandPoint
+    Caption = 'Kembali'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 9
+    OnClick = Button2Click
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=D:\UA' +
+      'S\Database.mdb;Mode=Share Deny None;Persist Security Info=False;' +
+      'Jet OLEDB:System database="";Jet OLEDB:Registry Path="";Jet OLED' +
+      'B:Database Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Databas' +
+      'e Locking Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:G' +
+      'lobal Bulk Transactions=1;Jet OLEDB:New Database Password="";Jet' +
+      ' OLEDB:Create System Database=False;Jet OLEDB:Encrypt Database=F' +
+      'alse;Jet OLEDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Comp' +
+      'act Without Replica Repair=False;Jet OLEDB:SFP=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 1112
+    Top = 16
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'pinjam'
+    Left = 1144
+    Top = 16
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 1184
+    Top = 16
+  end
+end
